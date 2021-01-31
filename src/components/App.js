@@ -1,5 +1,5 @@
 import React,{useState,useEffect,useReducer} from "react";
-import './App.css';
+import '../css/App.css';
 //https://api.github.com/users/bharathsurampudi
 
 function App({login}) {
@@ -11,7 +11,12 @@ function App({login}) {
   },[]);
 
   if(data){
-    return <div>{JSON.stringify(data)}</div>
+    return(
+      <div>
+        <h1>{data.name}</h1>
+        <p>{data.location}</p>
+      </div>
+    )
   }
 
   return (
