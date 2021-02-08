@@ -15,6 +15,7 @@ function App({login}) {
       <div>
         <h1>{data.name}</h1>
         <p>{data.location}</p>
+        <p>{data}</p>
       </div>
     )
   }
